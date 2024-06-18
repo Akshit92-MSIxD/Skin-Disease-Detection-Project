@@ -1,0 +1,6 @@
+CustomCNN/*.ipynb filter=lfs diff=lfs merge=lfs -text
+CustomCNN/SavedModels/*.hdf5 filter=lfs diff=lfs merge=lfs -text
+InceptionV3/*.ipynb filter=lfs diff=lfs merge=lfs -text
+VGG16/*.ipynb filter=lfs diff=lfs merge=lfs -text
+VGG16/SavedModels/*.h5 filter=lfs diff=lfs merge=lfs -text
+

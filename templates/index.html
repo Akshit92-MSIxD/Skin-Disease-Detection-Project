@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skin Disease Prediction Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="text-center">Skin Disease Image Classifier</h1>
+    <form class="p-3 text-center" action='/' method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <select class="form-select" name="subfolder" id="subfolder" required>
+                <option value="" disabled selected>Select subfolder</option>
+                <option value="bkl">bkl</option>
+                <option value="mel">mel</option>
+                <option value="nv">nv</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="file" name="imagefile" required>
+        </div>
+        <input class="btn btn-primary mt-3" type="submit" value="Predict Image">
+    </form>
+
+    {% if prediction1 %}
+        <p class="text-center"> <strong>Disease Predicted by VGG16 Model : </strong> {{prediction1}}</p>
+    {% endif %}
+
+    {% if prediction2 %}
+        <p class="text-center"> <strong>Diseas Predicted by InceptionV3 Model : </strong> {{prediction2}}</p>
+    {% endif %}
+
+    {% if prediction3 %}
+        <p class="text-center"> <strong>Disease Predicted by Custom Model : </strong>{{prediction3}}</p>
+    {% endif %}
+</body>
+</html>
+
