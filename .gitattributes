@@ -4,3 +4,6 @@ InceptionV3/*.ipynb filter=lfs diff=lfs merge=lfs -text
 VGG16/*.ipynb filter=lfs diff=lfs merge=lfs -text
 VGG16/SavedModels/*.h5 filter=lfs diff=lfs merge=lfs -text
 
+Dataset/bkl/*.jpg filter=lfs diff=lfs merge=lfs -text
+Dataset/mel/*.jpg filter=lfs diff=lfs merge=lfs -text
+Dataset/nv/*.jpg filter=lfs diff=lfs merge=lfs -text
